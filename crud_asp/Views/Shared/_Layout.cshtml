@@ -24,6 +24,8 @@
                     <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
                     <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
                     <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Personas", "Index", "Persona")</li>
+                    @*<li>@Html.ActionLink("Link", "Metodo/Funcion", "Controlador")</li>*@
                 </ul>
             </div>
         </div>
@@ -38,6 +40,8 @@
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/persona")
+    
     @RenderSection("scripts", required: false)
 </body>
 </html>

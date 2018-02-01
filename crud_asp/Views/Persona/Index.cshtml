@@ -1,0 +1,35 @@
+﻿@*@model IEnumerable<crud_asp.Models.persona>*@
+
+@{
+    ViewBag.Title = "Catalogo de personas";
+}
+
+<div class="row">
+    <h1>Mi primer CRUD</h1>
+    <hr>
+</div>
+<div class="row" style="margin-bottom: 20px">
+    <button class="btn btn-primary col-xs-4" id="btn_new">NUEVA PERSONA</button>
+    <div class="col-xs-4 form-group">
+        <select name="" id="select_status" class="form-control">
+            <option value="2">TODOS</option>
+            <option value="1">ACTIVOS</option>
+            <option value="0">INACTIVOS</option>
+        </select>
+    </div>
+    <div class="col-xs-4 form-group">
+        <input type="text" class="form-control" id="txt_busqueda" placeholder="busqueda...">
+    </div>
+</div>
+<div id="tableContainer" class="table-responsive row">
+
+    <table class="table table-striped table-bordered">
+        <thead id="thead">
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+
+</div>
+
+
+

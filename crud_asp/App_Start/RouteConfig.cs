@@ -18,6 +18,12 @@ namespace crud_asp
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+
+            //routes.MapRoute(
+            //    name: "Persona",
+            //    url: "{controller}/{action}/{id}",
+            //    defaults: new { controller = "Persona", action = "Index", id = UrlParameter.Optional }
+            //);
         }
     }
 }
