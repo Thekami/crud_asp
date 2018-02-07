@@ -1,0 +1,33 @@
+﻿.red {
+    border-color: red !important;
+}
+
+.example-modal .modal {
+    position: relative;
+    top: auto;
+    bottom: auto;
+    right: auto;
+    left: auto;
+    display: block;
+    z-index: 1;
+}
+
+.example-modal .modal {
+    background: transparent !important;
+}
+
+.over-auto {
+    overflow: auto;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-padding-left{
+    padding-left: 0;
+}
+
+.no-padding-right{
+    padding-right: 0;
+}

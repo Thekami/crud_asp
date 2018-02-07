@@ -23,12 +23,18 @@ namespace crud_asp
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
-            bundles.Add(new ScriptBundle("~/bundles/persona").Include(
-                      "~/Scripts/persona.js"));
+            bundles.Add(new ScriptBundle("~/bundles/main").Include(
+                      "~/Scripts/main.js",
+                      "~/Scripts/pnotify.custom.min.js",
+                      "~/Scripts/jquery-confirm.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
+                      "~/Content/site.css",
+                      "~/Content/animate.min.css",
+                      "~/Content/jquery-confirm.css",
+                      "~/Content/pnotify.custom.min.css",
+                      "~/Content/micss.css"));
         }
     }
 }

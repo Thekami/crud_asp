@@ -17,8 +17,8 @@
             <option value="0">INACTIVOS</option>
         </select>
     </div>
-    <div class="col-xs-4 form-group">
-        <input type="text" class="form-control" id="txt_busqueda" placeholder="busqueda...">
+    <div class="col-xs-4 form-group no-padding">
+        <input type="text" class="form-control pull-right" id="txt_busqueda" placeholder="busqueda...">
     </div>
 </div>
 <div id="tableContainer" class="table-responsive row">
@@ -30,6 +30,54 @@
     </table>
 
 </div>
+
+
+
+<div class="modal fade bs-example-modal-lg" id="myModal">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">Nueva persona</h4>
+            </div>
+            <div class="modal-body over-auto">
+                <form id="form_personas">
+
+                    <input type="text" id="action" name="action" value="" hidden/>
+
+                    <div class="form-group col-md-6 no-padding-left">
+                        <label>Nombres</label>
+                        <input type="text" name="txt_nombres" id="txt_nombres" class="form-control required" />
+                    </div>
+                    <div class="form-group col-md-6 no-padding-right">
+                        <label>Apellidos</label>
+                        <input type="text" name="txt_apellidos" id="txt_apellidos" class="form-control required" />
+                    </div>
+                    <div class="form-group col-md-6 no-padding-left">
+                        <label>Sexo</label>
+                        <select name="txt_sexo" id="txt_sexo" class="form-control required">
+                            <option value="0" selected disabled>Seleccione una opción</option>
+                            <option value="1">Masculino</option>
+                            <option value="2">Femenino</option>
+                        </select>
+                    </div>
+                    <div class="form-group col-md-6 no-padding-right">
+                        <label>Fecha de nacimiento</label>
+                        <input type="date" name="txt_fecha" id="txt_fecha" class="form-control required" />
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pull-left" data-dismiss="modal">CERRAR</button>
+                <button type="button" class="btn btn-primary btn_modal" id="btn_add">GUARDAR</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript" src="~/Scripts/persona.js"></script>    
+}
 
 
 
