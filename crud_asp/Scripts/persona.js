@@ -5,6 +5,7 @@
 });
 
 //Hola mundo 
+//2ble hola
 
 var ajaxSuccess = "Acción realizada con exito!";
 var ajaxError = "Ocurrió un error inesperado, intentelo mas tarde o pongase en contacto con el administrador";
