@@ -7,6 +7,7 @@
 //Hola mundo 
 //2ble hola
 // nada
+// ya no la cagues
 var ajaxSuccess = "Acción realizada con exito!";
 var ajaxError = "Ocurrió un error inesperado, intentelo mas tarde o pongase en contacto con el administrador";
 var validaCampos = "Debes completar todos los campos para poder continuar";
