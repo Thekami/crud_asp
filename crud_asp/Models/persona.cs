@@ -23,9 +23,9 @@ namespace crud_asp.Models
             string consult;
 
             if (status == "2")
-                consult = "SELECT [id] , CONCAT([apellidos],' ',[nombres]) nombre, CAST([fecha_nac] AS date) fecha_nac, [sexo], [status] FROM[test].[dbo].[personas]";
+                consult = "SELECT [id] , ([apellidos] + ' ' + [nombres]) nombre, CAST([fecha_nac] AS date) fecha_nac, [sexo], [status] FROM[test].[dbo].[personas]";
             else
-                consult = "SELECT [id] , CONCAT([apellidos],' ',[nombres]) nombre, CAST([fecha_nac] AS date) fecha_nac, [sexo], [status] FROM[test].[dbo].[personas] WHERE [status] = " + status;
+                consult = "SELECT [id] , ([apellidos] + ' ' + [nombres]) nombre, CAST([fecha_nac] AS date) fecha_nac, [sexo], [status] FROM[test].[dbo].[personas] WHERE [status] = " + status;
 
             DBConnection.SqlConsulta(consult, ref dt);
 
